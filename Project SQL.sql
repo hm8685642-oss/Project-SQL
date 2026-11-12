@@ -1,0 +1,13 @@
+show databases;
+use sql_interview_100;
+show tables;
+Select * from customers;
+Select product_id,product_name,price from products;
+Select order_ID , Customer_ID, status from orders where status = 'delivered';
+Select product_ID , Category_ID, product_name,price from products where price = 1000 OR price < 1000;
+Select product_name, product_ID, stock_quantity,is_active from products where is_active > 0 ;
+Select Customer_id, full_name, city from customers where city = 'Delhi'OR city = 'Mumbai';
+Select distinct status from orders;
+Select product_name, product_ID, price,category_ID from products order by price DESC ;
+Select product_name , product_ID, price from products order by price ASC limit 5 ;
+Select count(*) from orders;
